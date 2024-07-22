@@ -1,12 +1,12 @@
 use std::collections::HashMap;
 
-struct KeyValueDB {
+struct KvDb {
     store: HashMap<String, String>,
 }
 
-impl KeyValueDB {
-    fn new() -> KeyValueDB {
-        KeyValueDB {
+impl KvDb {
+    fn new() -> KvDb {
+        KvDb {
             store: HashMap::new(),
         }
     }
@@ -25,7 +25,7 @@ impl KeyValueDB {
 }
 
 fn main() {
-    let mut db: KeyValueDB = KeyValueDB::new();
+    let mut db: KvDb = KvDb::new();
 
     db.insert("Ram".to_string(), "12".to_string());
     db.insert("Adil".to_string(), "28".to_string());
